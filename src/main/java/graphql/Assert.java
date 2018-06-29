@@ -14,7 +14,9 @@ public class Assert {
     }
 
     public static <T> T assertNotNull(T object) {
-        if (object != null) return object;
+        if (object != null) {
+          return object;
+        }
         throw new AssertException("Object required to be not null");
     }
 
